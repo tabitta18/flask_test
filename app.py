@@ -10,7 +10,7 @@ def index():
 def admin():
     return render_template('admin.html')
 
-@app.route('/admin')
+@app.route('/home')
 def index():
     return render_template('admin.html')
 
