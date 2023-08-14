@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{% block title %}MyApp{% endblock %}</title>
+    <title>{% block title %}Landing Page{% endblock %}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <header>
-        <h1>MyApp</h1>
         <nav>
             <ul>
                 <li><a href="{{ url_for('index') }}">Home</a></li>
-                <li><a href="{{ url_for('admin') }}">admin</a></li>
-                <li><a href="{{ url_for('help') }}">help</a></li>
-                <!-- Добавьте другие ссылки на страницы -->
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <div id="app">
-            
-        </div>
     </header>
     <main>
         {% block content %}{% endblock %}
     </main>
-
+    <footer>
+        <p>© 2023 Landing Page</p>
+    </footer>
 </body>
 </html>
